@@ -1,0 +1,59 @@
+.range {
+  &__element {
+    width: 28rem;
+    margin: 1.6rem auto;
+  }
+
+  &__label {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+}
+
+.range {
+  .noUi-target {
+    background: #FDBF40 ;
+    border-radius: 3rem;
+    border: 0.4rem solid var(--primary-color);
+    box-shadow: none;
+  }
+
+  .noUi-horizontal {
+    height: 2.6rem;
+  }
+
+  .noUi-handle {
+    top: -1.3rem;
+    right: -2.3rem;
+
+    width: 4.6rem;
+    height: 4.6rem;
+
+    border-radius: 50%;
+    cursor: pointer;
+    background: white;
+
+    border: 5px solid var(--primary-color);
+
+    transition: border-color 0.3s ease, left 0.3s ease-in-out;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: 50%;
+      background-color: var(--primary-color);
+    }
+  }
+}

@@ -2,12 +2,23 @@
 @import 'mixins';
 @import 'global';
 @import 'layout';
+
+@import './UI/button';
+@import './UI/navigation';
+@import './UI/text';
+@import './UI/dropdown';
+@import './UI/checkbox';
+@import './UI/input';
+@import './UI/range';
+
 @import 'page-header';
-@import 'page-footer';
-
-
-
-
-
-
-
+@import 'footer';
+@import 'intro';
+@import 'slider';
+@import 'presentation';
+@import 'benefits';
+@import 'media';
+@import 'partners';
+@import 'reviews';
+@import 'map';
+@import 'calculator';

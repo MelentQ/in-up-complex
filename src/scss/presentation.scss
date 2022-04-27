@@ -1,0 +1,38 @@
+.presentation {
+  padding: 15rem 0;
+
+  &__inner {
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__slider-wrapper {
+  }
+
+  &__slide-wrapper {
+  }
+
+  &__slide {
+  }
+
+  &__slide-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__pesel {
+    position: absolute;
+    right: 3rem;
+    bottom: -3rem;
+    z-index: 2;
+    pointer-events: none;
+
+    width: 42.9rem;
+    height: 26.3rem;
+
+    object-fit: contain;
+  }
+}

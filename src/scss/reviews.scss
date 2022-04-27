@@ -1,0 +1,33 @@
+.reviews {
+
+  padding: 10rem 0 13rem;
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 4.8rem;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__slider-wrapper {
+    margin-top: 4.4rem;
+  }
+
+  &__slide {
+  }
+
+  &__slide-title {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #010101;
+  }
+
+  &__slide-text {
+  }
+}

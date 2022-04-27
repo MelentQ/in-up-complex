@@ -14,6 +14,10 @@ import modals from './modals';
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import sliders from './sliders';
+import reviewSliders from './reviewSliders';
+import map from './map';
+import calculator from './calculator';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     mediaPlayer();
     modals();
     datepicker();
-
+    sliders();
+    reviewSliders();
+    map();
+    calculator();
 });
 
 document.addEventListener('lazyloaded', () => {

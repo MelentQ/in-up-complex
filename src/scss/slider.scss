@@ -1,0 +1,56 @@
+.slider {
+  padding: 15rem 0;
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 14rem;
+  }
+
+  &__swiper {
+  }
+
+  &__navigation-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12.8rem;
+
+    margin-bottom: 2rem;
+
+    .navigation {
+      grid-column: span 2;
+    }
+  }
+
+  &__wrapper {
+  }
+
+  &__slide-wrapper {
+  }
+
+  &__slide {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12.8rem;
+  }
+
+  &__slide-content {
+    grid-column: span 2;
+  }
+
+  &__slide-title {
+    margin-bottom: 2.6rem;
+  }
+
+  &__slide-text {
+    
+  }
+
+  &__slide-image {
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+  }
+}

@@ -1,0 +1,41 @@
+.partners {
+  padding: 10rem 0;
+
+  &__inner {
+  }
+
+  &__title {
+    margin-bottom: 13rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+
+    height: 10rem;
+    width: auto;
+
+    transition: opacity 0.3s ease;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__link-image {
+    height: 100%;
+    width: auto;
+
+    object-fit: contain;
+  }
+}

@@ -2,14 +2,209 @@
 {{#content "main"}}
 
 
-<section class="home">
+<section class="intro">
+    <img class="intro__bg" src="img/bg.jpg" alt="BG Image">
+    <h1 class="visually-hidden">In-Up Complex</h1>
     <div class="container">
-        <h1>
-            Home
-        </h1>
+        <div class="intro__inner">
+            <div class="intro__left">
+                <img class="intro__logo" src="img/logo.png" alt="logo">
+                <div class="intro__title-block">
+                    <img class="intro__title-image" src="img/top-2.png" alt="Bottom Image">
+                    <span class="intro__title">одновременно против клещей, блох и гельминтов</span>
+                </div>
+            </div>
+            <div class="intro__right">
+                <img class="intro__image" src="img/top-1.png" alt="Image">
+            </div>
+        </div>
+        <a class="button intro__button" href="#buy">ГДЕ КУПИТЬ</a>
     </div>
 </section>
 
+<section class="slider">
+    <div class="container">
+        <div class="slider__inner">
+            <h2 class="h2 slider__title">IN-UP complex: так просто — так эффективно</h2>
+
+            <div class="swiper slider__swiper js-init-slider">
+                <div class="slider__navigation-block">
+                    {{>navigation}}
+                </div>
+                <ul class="swiper-wrapper slider__wrapper">
+                    {{#each slider}}
+                    <li class="swiper-slide slider__slide-wrapper">
+                        <div class="slider__slide">
+                            <div class="slider__slide-content">
+                                <h2 class="title slider__slide-title">Уникальный состав: действует одновременно против всех экто- и эндопаразитов </h2>
+                                <div class="text slider__slide-text">
+                                    <p>Опасные паразиты подстерегают вашего любимца повсеместно. IN-UP complex – первый в России комплексный препарат с самым широким спектром действия. Это ваш верный помощник в защите здоровья питомца одновременно от внешних и внутренних паразитов.</p>
+                                    <ul>
+                                        <li>Внешние: клещи, блохи, вши, власоеды.</li>
+                                        <li>Внутренние: круглые гельминты (и личинки дирофилярий), ленточные гельминты.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="slider__slide-image">
+                                <img src="img/content/slider/1.png" alt="Slider Image">
+                            </div>
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="presentation">
+    <div class="container">
+        <div class="presentation__inner">
+            <div class="swiper presentation__slider js-init-slider">
+                <ul class="swiper-wrapper presentation__slider-wrapper">
+                    {{#each presentation}}
+                    <li class="swiper-slide presentation__slide-wrapper">
+                        <div class="presentation__slide">
+                            <img class="presentation__slide-image" src="img/content/presentation/1.png" alt="Presentation Image">
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+                {{>navigation}}
+                <img class="presentation__pesel" src="img/pesel-1.png" alt="Pesel">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="container">
+        <div class="benefits__inner">
+            <ul class="benefits__list">
+                {{#each presentation}}
+                <li class="benefits__item">
+                    <div class="benefits__item-image-wrapper">
+                        <img src="{{this.image}}" alt="Benefit 1">
+                    </div>
+                    <div class="benefits__item-text-block">
+                        <h3 class="title benefits__item-title">{{this.title}}</h3>
+                        <div class="text benefits__item-text">
+                            {{{this.body}}}
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="media">
+    <div class="container">
+        <div class="media__inner">
+            <h2 class="h2 media__title">Как правильно защитить любимца</h2>
+            <iframe class="media__iframe" src="https://www.youtube.com/embed/91oFy3zuOjM" title="Как правильно защитить любимца" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a class="media__link" href="#" title="Скачать" download>
+                <span class="media__link-extension">pdf</span>
+                <span class="media__link-label">ИНСТРУКЦИЯ <br> ПО ПРИМЕНЕНИЮ</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="calculator js-init-calculator">
+    <div class="container">
+        <div class="calculator__inner">
+            <h2 class="h2 calculator__title">Подберите препарат и дозировку</h2>
+            <div class="checkbox">
+                <span class="title checkbox__label">кошка | собака</span>
+                <button class="checkbox__btn js-checkbox" type="button">
+                    <div class="checkbox__target"></div>
+                </button>
+            </div>
+
+            <div style="min-width: 0; width: 100%; margin-top: 2rem;">
+                <div class="swiper calculator__slider">
+                    <ul class="swiper-wrapper calculator__slider-wrapper">
+                        {{#each calculator}}
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="{{this.image}}" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">{{this.title}}</span>
+                            </div>
+                        </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="input">
+                <span class="input__label">вес</span>
+                <input class="input__element js-input" type="text" maxlength="3">
+                <span class="input__label">кг&nbsp;&nbsp;&nbsp;</span>
+            </div>
+            <div class="range">
+                <div class="range__element js-range"></div>
+                <span class="range__label">разовая доза 15 капель = 0,5 мл</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners" id="buy">
+    <div class="container">
+        <div class="partners__inner">
+            <h2 class="h2 partners__title">Купить в интернете</h2>
+            <ul class="partners__list">
+                {{#each partners}}
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="{{this.image}}" alt="Partner">
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="map js-init-map">
+    <div class="container">
+        <div class="map__inner">
+            <h2 class="h2 map__title">Купить в магазине</h2>
+            <div class="map__filter">
+                {{>dropdown}}
+                {{>dropdown}}
+            </div>
+            <div class="map__block" id="map"></div>
+            <img class="map__pesel" src="img/pesel-2.png" alt="Map Pesel">
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <h2 class="h2 reviews__title">Отзывы</h2>
+
+            <div class="swiper reviews__slider js-init-review-slider">
+                {{>navigation}}
+                <ul class="swiper-wrapper reviews__slider-wrapper">
+                    {{#each reviews}}
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">{{this.title}}</h3>
+                        <div class="text reviews__slide-text">
+                            {{{this.body}}}
+                        </div>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{/content}}
 {{/extend}}
