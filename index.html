@@ -14,11 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7aa96264-d89f-431f-adea-315ea3c7825f&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 
 <body class="no-touch" ontouchstart="">
     <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
-        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 25 24" id="arrow-l" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.002 6.95H11.94V.997L.998 12.498 11.938 24v-5.952h12.064V6.95z"/></symbol><symbol viewBox="0 0 25 24" id="arrow-r" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.998 18.047H13.06v5.952l10.941-11.5L13.062.997V6.95H.997v11.097z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>    </div>
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 25 24" id="arrow-l" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.002 6.95H11.94V.997L.998 12.498 11.938 24v-5.952h12.064V6.95z"/></symbol><symbol viewBox="0 0 25 24" id="arrow-r" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.998 18.047H13.06v5.952l10.941-11.5L13.062.997V6.95H.997v11.097z"/></symbol><symbol viewBox="0 0 19 12" id="dropdown" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.502 11.005L.994.992H18.01L9.502 11.004z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>    </div>
 
     <div class="page-content">
         <header class="page-header">
@@ -42,14 +45,14 @@
                 <img class="intro__image" src="img/top-1.png" alt="Image">
             </div>
         </div>
-        <a class="button intro__button" href="#contacts">ГДЕ КУПИТЬ</a>
+        <a class="button intro__button" href="#buy">ГДЕ КУПИТЬ</a>
     </div>
 </section>
 
 <section class="slider">
     <div class="container">
         <div class="slider__inner">
-            <h2 class="slider__title">IN-UP complex: так просто — так эффективно</h2>
+            <h2 class="h2 slider__title">IN-UP complex: так просто — так эффективно</h2>
 
             <div class="swiper slider__swiper js-init-slider">
                 <div class="slider__navigation-block">
@@ -200,22 +203,309 @@
 <section class="media">
     <div class="container">
         <div class="media__inner">
-            <h2 class="media__title">Как правильно защитить любимца</h2>
+            <h2 class="h2 media__title">Как правильно защитить любимца</h2>
             <iframe class="media__iframe" src="https://www.youtube.com/embed/91oFy3zuOjM" title="Как правильно защитить любимца" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <a class="media__link" href="#">
+            <a class="media__link" href="#" title="Скачать" download>
                 <span class="media__link-extension">pdf</span>
-                <span class="media__link-label">ИНСТРУКЦИЯ ПО ПРИМЕНЕНИЮ</span>
+                <span class="media__link-label">ИНСТРУКЦИЯ <br> ПО ПРИМЕНЕНИЮ</span>
             </a>
         </div>
     </div>
 </section>
 
+<section class="calculator js-init-calculator">
+    <div class="container">
+        <div class="calculator__inner">
+            <h2 class="h2 calculator__title">Подберите препарат и дозировку</h2>
+            <div class="checkbox">
+                <span class="title checkbox__label">кошка | собака</span>
+                <button class="checkbox__btn js-checkbox" type="button">
+                    <div class="checkbox__target"></div>
+                </button>
+            </div>
+
+            <div style="min-width: 0; width: 100%; margin-top: 2rem;">
+                <div class="swiper calculator__slider">
+                    <ul class="swiper-wrapper calculator__slider-wrapper">
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="img/content/calc-slider/3.png" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">IN-UP complex капли для кошек</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="img/content/calc-slider/2.png" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">IN-UP complex капли для кошек</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="img/content/calc-slider/3.png" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">IN-UP complex капли для кошек</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="img/content/calc-slider/4.png" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">IN-UP complex капли для кошек</span>
+                            </div>
+                        </li>
+                        <li class="swiper-slide calculator__slide-wrapper">
+                            <div class="calculator__slide">
+                                <div class="calculator__slide-image-wrapper">
+                                    <img src="img/content/calc-slider/2.png" alt="Calculator">
+                                </div>
+                                <span class="title calculator__slide-title">IN-UP complex капли для кошек</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="calculator__input-block">
+                <span class="calculator__input-label">вес</span>
+                <input class="calculator__input js-input" type="number">
+                <span class="calculator__input-label">кг</span>
+            </div>
+            <div class="calculator__range-block">
+                <div class="calculator__range js-range"></div>
+                <span class="calculator__range-label">разовая доза 15 капель = 0,5 мл</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="partners" id="buy">
+    <div class="container">
+        <div class="partners__inner">
+            <h2 class="h2 partners__title">Купить в интернете</h2>
+            <ul class="partners__list">
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/1.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/2.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/3.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/4.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/5.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/6.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/7.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/8.png" alt="Partner">
+                    </a>
+                </li>
+                <li class="partners__item">
+                    <a class="partners__link" href="#" target="_blank" title="Partner Name">
+                        <img class="partners__link-image" src="img/content/partners/9.png" alt="Partner">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="map js-init-map">
+    <div class="container">
+        <div class="map__inner">
+            <h2 class="h2 map__title">Купить в магазине</h2>
+            <div class="map__filter">
+                <div class="dropdown">
+                    <button class="dropdown__btn" type="button">
+                        <span class="dropdown__selected">Не выбрано</span>
+                        <span class="dropdown__icon">
+                            <svg><use xlink:href="#dropdown"></svg>
+                        </span>
+                    </button>
+                    <div class="dropdown__content">
+                        <ul class="dropdown__options">
+                            <li class="dropdown__option active">
+                                Не выбрано
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 1
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 2
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 3
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>                <div class="dropdown">
+                    <button class="dropdown__btn" type="button">
+                        <span class="dropdown__selected">Не выбрано</span>
+                        <span class="dropdown__icon">
+                            <svg><use xlink:href="#dropdown"></svg>
+                        </span>
+                    </button>
+                    <div class="dropdown__content">
+                        <ul class="dropdown__options">
+                            <li class="dropdown__option active">
+                                Не выбрано
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 1
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 2
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 3
+                            </li>
+                            <li class="dropdown__option">
+                                Опция 4
+                            </li>
+                        </ul>
+                    </div>
+                </div>            </div>
+            <div class="map__block" id="map"></div>
+            <img class="map__pesel" src="img/pesel-2.png" alt="Map Pesel">
+        </div>
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <div class="reviews__inner">
+            <h2 class="h2 reviews__title">Отзывы</h2>
+
+            <div class="swiper reviews__slider js-init-review-slider">
+                <div class="navigation">
+                    <button class="navigation__button js-prev" type="button" title="Назад">
+                        <svg><use xlink:href="#arrow-l"></svg>
+                    </button>
+                    <span class="navigation__counter">1/3</span>
+                    <button class="navigation__button js-next" type="button" title="Вперед">
+                        <svg><use xlink:href="#arrow-r"></svg>
+                    </button>
+                </div>                <ul class="swiper-wrapper reviews__slider-wrapper">
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Кокшанова Л.В., заводчик французских бульдогов</h3>
+                        <div class="text reviews__slide-text">
+                            <p>С препаратом IN-UP complex знакома несколько лет. Успешно применяю его в питомнике французских бульдогов. Животные препарат переносят отлично. Применяла IN-UP complex как для профилактики, так и для лечения собак. Результаты радуют. Цена низкая, качество хорошее.</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Байдаров Олег Владимирович, главный ветеринарный врач клиники «Доктор-Ай», Московская обл., г. Королёв</h3>
+                        <div class="text reviews__slide-text">
+                            <p>Капли IN-UP complex были испробованы мной на четырёх кошках. Кошки взрослые, кастрированные, живут в ветклинике. Имеют свободный доступ на прилегающую территорию. Препарат наносился однократно на кожу в области холки в дозе 1 пипетка на голову. Препарат наносится легко, шерсть смачивается препаратом незначительно. Специфический запах препарата исчезает в течение часа после нанесения. Аллергических реакций и гиперсаливации после нанесения препарата не наблюдалось. В период наблюдения со дня обработки, с сентября по декабрь 2018 г. у обработанных препаратом IN-UP complex кошек не выявлено наличие эктопаразитов, что говорит о высокой эффективности препарата в профилактических целях. Планирую и дальше назначать IN-UP complex своим пациентам.</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Кокшанова Л.В., заводчик французских бульдогов</h3>
+                        <div class="text reviews__slide-text">
+                            <p>С препаратом IN-UP complex знакома несколько лет. Успешно применяю его в питомнике французских бульдогов. Животные препарат переносят отлично. Применяла IN-UP complex как для профилактики, так и для лечения собак. Результаты радуют. Цена низкая, качество хорошее.</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Байдаров Олег Владимирович, главный ветеринарный врач клиники «Доктор-Ай», Московская обл., г. Королёв</h3>
+                        <div class="text reviews__slide-text">
+                            <p>Капли IN-UP complex были испробованы мной на четырёх кошках. Кошки взрослые, кастрированные, живут в ветклинике. Имеют свободный доступ на прилегающую территорию. Препарат наносился однократно на кожу в области холки в дозе 1 пипетка на голову. Препарат наносится легко, шерсть смачивается препаратом незначительно. Специфический запах препарата исчезает в течение часа после нанесения. Аллергических реакций и гиперсаливации после нанесения препарата не наблюдалось. В период наблюдения со дня обработки, с сентября по декабрь 2018 г. у обработанных препаратом IN-UP complex кошек не выявлено наличие эктопаразитов, что говорит о высокой эффективности препарата в профилактических целях. Планирую и дальше назначать IN-UP complex своим пациентам.</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Кокшанова Л.В., заводчик французских бульдогов</h3>
+                        <div class="text reviews__slide-text">
+                            <p>С препаратом IN-UP complex знакома несколько лет. Успешно применяю его в питомнике французских бульдогов. Животные препарат переносят отлично. Применяла IN-UP complex как для профилактики, так и для лечения собак. Результаты радуют. Цена низкая, качество хорошее.</p>
+                        </div>
+                    </li>
+                    <li class="swiper-slide reviews__slide">
+                        <h3 class="reviews__slide-title">Байдаров Олег Владимирович, главный ветеринарный врач клиники «Доктор-Ай», Московская обл., г. Королёв</h3>
+                        <div class="text reviews__slide-text">
+                            <p>Капли IN-UP complex были испробованы мной на четырёх кошках. Кошки взрослые, кастрированные, живут в ветклинике. Имеют свободный доступ на прилегающую территорию. Препарат наносился однократно на кожу в области холки в дозе 1 пипетка на голову. Препарат наносится легко, шерсть смачивается препаратом незначительно. Специфический запах препарата исчезает в течение часа после нанесения. Аллергических реакций и гиперсаливации после нанесения препарата не наблюдалось. В период наблюдения со дня обработки, с сентября по декабрь 2018 г. у обработанных препаратом IN-UP complex кошек не выявлено наличие эктопаразитов, что говорит о высокой эффективности препарата в профилактических целях. Планирую и дальше назначать IN-UP complex своим пациентам.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
         </main>
-        <footer class="page-footer">
+        <footer class="footer">
             <div class="container">
-                <h2>
-                    Footer
-                </h2>
+                <div class="footer__inner">
+                    <div class="footer__grid">
+                        <div class="footer__item">
+                            <span class="footer__item-label">Узнай о нас</span>
+                            <div class="footer__item-content">
+                                <a class="footer__logo" href="#" title="Footer Logo">
+                                    <img src="img/logo-footer.png" alt="Footer Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <span class="footer__item-label">Поделись</span>
+                            <div class="footer__item-content">
+                                <a class="footer__share" href="#" title="Footer Share">
+                                    <img src="img/share.png" alt="Footer Share">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <span class="footer__item-label">Дружи с нами</span>
+                            <div class="footer__item-content">
+                                <a class="footer__social" href="#" title="Footer Social">
+                                    <img src="img/social-1.png" alt="Footer Social">
+                                </a>
+                                 <a class="footer__social" href="#" title="Footer Social">
+                                    <img src="img/social-2.png" alt="Footer Social">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__item">
+                            <span class="footer__item-label">Напиши нам</span>
+                            <div class="footer__item-content">
+                                <a class="footer__social" href="#" title="Footer Social">
+                                    <img src="img/social-3.png" alt="Footer Social">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">
+                        <span class="footer__copyright-label">© 2014-2022 ООО «НВП «Астрафарм»</span>
+                        <a class="footer__policy" href="#">Политика конфиденциальности</a>
+                    </div>
+                </div>
             </div>
         </footer>        <style>
             .ie-placeholder {

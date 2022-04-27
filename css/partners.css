@@ -1,0 +1,1 @@
+.partners{padding:10rem 0}.partners__title{margin-bottom:13rem}.partners__list{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}.partners__link{display:flex;justify-content:center;height:10rem;width:auto;transition:opacity .3s ease}.partners__link:focus,.partners__link:hover{opacity:.8}.partners__link-image{height:100%;width:auto;-o-object-fit:contain;object-fit:contain}
