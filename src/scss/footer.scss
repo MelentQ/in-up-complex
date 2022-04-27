@@ -10,6 +10,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1.8rem;
 
+    @media only screen and (max-width: (640px)) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      margin-bottom: 2rem;
+    }
+
     &::before {
       content: '';
 
@@ -41,6 +47,10 @@
 
     font-size: 1.4rem;
     line-height: 1.2;
+
+    @media only screen and (max-width: (640px)) {
+      text-align: center;
+    }
   }
 
   &__item-content {
@@ -51,6 +61,11 @@
     gap: 1.2rem;
 
     padding: 3rem 0;
+
+    @media only screen and (max-width: (640px)) {
+      justify-content: center;
+      padding: 1rem 0;
+    }
   }
 
   &__logo,
@@ -107,6 +122,13 @@
     @media screen and (max-width: 1200px) {
       margin: 0 calc(-1 * var(--content-padding));
       padding: 1rem var(--content-padding);
+    }
+
+    @media only screen and (max-width: (640px)) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
   }
 

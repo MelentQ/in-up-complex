@@ -1,17 +1,30 @@
 .partners {
   padding: 10rem 0;
 
+  @media only screen and (max-width: (640px)) {
+    padding: 4rem 0;
+  }
+
   &__inner {
   }
 
   &__title {
     margin-bottom: 13rem;
+
+    @media only screen and (max-width: (640px)) {
+      margin-bottom: 4rem;
+      text-align: center;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+
+    @media only screen and (max-width: (640px)) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {

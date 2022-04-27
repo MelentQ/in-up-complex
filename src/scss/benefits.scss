@@ -2,6 +2,10 @@
   
   padding: 5rem 0 15rem;
 
+  @media only screen and (max-width: (640px)) {
+    padding: 5rem 0 5rem;
+  }
+
   &__inner {
   }
 
@@ -9,6 +13,10 @@
     display: flex;
     flex-direction: column;
     gap: 30rem;
+
+    @media only screen and (max-width: (640px)) {
+      gap: 8rem;
+    }
   }
 
   &__item {
@@ -16,14 +24,27 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10rem;
 
+    @media only screen and (max-width: (640px)) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
+
     &:nth-child(2n + 2) {
       .benefits__item-image-wrapper {
         order: 2;
+
+        @media only screen and (max-width: (640px)) {
+          order: 0;
+        }
       }
     }
   }
 
   &__item-image-wrapper {
+    @media only screen and (max-width: (640px)) {
+      max-width: 18rem;
+      margin: 0 auto;
+    }
     img {
       width: 100%;
       height: auto;
@@ -37,6 +58,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media only screen and (max-width: (640px)) {
+      grid-column: span 1;
+    }
   }
 
   &__item-title {

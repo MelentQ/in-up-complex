@@ -32,10 +32,15 @@ export default function calculator() {
 
       const sliderElement = container.querySelector('.swiper');
       const swiper = new Swiper(sliderElement, {
-        slidesPerView: 5,
+        slidesPerView: 2.4,
         centeredSlides: true,
         loop: true,
-        allowTouchMove: false
+        allowTouchMove: false,
+        breakpoints: {
+          641: {
+            slidesPerView: 5
+          }
+        }
       });
 
       let range; // no ui slider

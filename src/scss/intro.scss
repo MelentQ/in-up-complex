@@ -3,12 +3,23 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 
   min-height: 100vh;
 
-  padding-top: 13.2rem;
-  padding-bottom: 14.6rem;
+  padding-top: 5rem;
+  padding-bottom: 15rem;
+  
+  @media only screen and (max-width: (640px)) {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   &__bg {
     position: absolute;
@@ -23,6 +34,8 @@
   }
 
   &__inner {
+    flex-grow: 1;
+
     position: relative;
     z-index: 2;
 
@@ -30,10 +43,21 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
 
-    margin-bottom: 6.8rem;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: (640px)) {
+      display: contents;
+    }
   }
 
   &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media only screen and (max-width: (640px)) {
+      display: contents;
+    }
   }
 
   &__logo {
@@ -41,6 +65,16 @@
     height: auto;
 
     object-fit: contain;
+
+    @media only screen and (max-width: (640px)) {
+      position: relative;
+      z-index: 2;
+
+      order: 1;
+
+      width: 18rem;
+      margin-bottom: 4rem;
+    }
   }
 
   &__title-block {
@@ -48,6 +82,16 @@
 
     max-width: 42rem;
     margin-top: 9rem;
+
+    @media only screen and (max-width: (640px)) {
+      position: relative;
+      z-index: 2;
+
+      order: 4;
+
+      margin-top: 4.5rem;
+      max-width: 20rem;
+    }
   }
 
   &__title {
@@ -59,21 +103,47 @@
     font-size: 3.6rem;
     font-weight: 400;
     line-height: 1.2;
-    color: var(--primary-color);
+    color: white;
+
+    @media only screen and (max-width: (640px)) {
+      font-size: 1.8rem;
+      color: var(--text-color);
+    }
   }
 
   &__title-image {
     position: absolute;
-    bottom: -14.8rem;
-    left: 20.6rem;
+    bottom: calc(100% + 3rem);
+    left: 0;
     z-index: 1;
 
-    height: 20rem;
+    height: 13rem;
 
     object-fit: contain;
+
+    @media only screen and (max-width: (640px)) {
+      bottom: unset;
+      left: unset;
+      right: 0;
+      bottom: -3rem;
+
+      height: 6.5rem;
+    }
   }
 
   &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media only screen and (max-width: (640px)) {
+      position: relative;
+      z-index: 2;
+
+      order: 2;
+
+      margin-bottom: 2rem;
+    }
   }
 
   &__image {
@@ -81,6 +151,10 @@
     height: auto;
 
     object-fit: contain;
+
+    @media only screen and (max-width: (640px)) {
+      width: calc(100% - 4rem);
+    }
   }
 
   &__button {
@@ -90,5 +164,9 @@
     display: block;
     width: fit-content;
     margin: 0 auto;
+
+    @media only screen and (max-width: (640px)) {
+      order: 3;
+    }
   }
 }

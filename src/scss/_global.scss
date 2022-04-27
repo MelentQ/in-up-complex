@@ -17,6 +17,10 @@
     --secondary-color: #E99022;
     --heading-color: #4A270E;
     --text-color: #737373;
+
+    @media only screen and (max-width: (640px)) {
+        --content-padding: 20px;
+    }
 }
 
 html {

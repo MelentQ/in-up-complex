@@ -2,11 +2,20 @@
 
   padding: 10rem 0 13rem;
 
+  @media only screen and (max-width: (640px)) {
+    padding: 4rem 0;
+  }
+
   &__inner {
   }
 
   &__title {
     margin-bottom: 4.8rem;
+
+    @media only screen and (max-width: (640px)) {
+      margin-bottom: 2.4rem;
+      text-align: center;
+    }
   }
 
   &__slider {

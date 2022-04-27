@@ -18,6 +18,7 @@ import sliders from './sliders';
 import reviewSliders from './reviewSliders';
 import map from './map';
 import calculator from './calculator';
+import header from './header';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     reviewSliders();
     map();
     calculator();
+    header();
 });
 
 document.addEventListener('lazyloaded', () => {

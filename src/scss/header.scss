@@ -1,0 +1,54 @@
+.header {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid var(--primary-color);
+  box-shadow: 0px 6px 8px 0px rgba(34, 60, 80, 0.2);
+
+  background-color: white;
+
+  transition: top 1s ease;
+
+  @media only screen and (max-width: (640px)) {
+    padding: 1.2rem 0;
+  }
+
+  &.active {
+    top: 0;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  &__logo {
+    width: 15.4rem;
+    height: auto;
+    object-fit: contain;
+
+    @media only screen and (max-width: (640px)) {
+      width: 13rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--heading-color);
+
+    @media only screen and (max-width: (640px)) {
+      display: none;
+    }
+  }
+
+  &__button {
+  }
+}
