@@ -27,31 +27,32 @@
         <div class="slider__inner">
             <h2 class="h2 slider__title">IN-UP complex: так просто — так эффективно</h2>
 
-            <div class="swiper slider__swiper js-init-slider">
-                <div class="slider__navigation-block">
-                    {{>navigation}}
-                </div>
-                <ul class="swiper-wrapper slider__wrapper">
-                    {{#each slider}}
-                    <li class="swiper-slide slider__slide-wrapper">
-                        <div class="slider__slide">
-                            <div class="slider__slide-content">
-                                <h2 class="title slider__slide-title">Уникальный состав: действует одновременно против всех экто- и эндопаразитов </h2>
-                                <div class="text slider__slide-text">
-                                    <p>Опасные паразиты подстерегают вашего любимца повсеместно. IN-UP complex – первый в России комплексный препарат с самым широким спектром действия. Это ваш верный помощник в защите здоровья питомца одновременно от внешних и внутренних паразитов.</p>
-                                    <ul>
-                                        <li>Внешние: клещи, блохи, вши, власоеды.</li>
-                                        <li>Внутренние: круглые гельминты (и личинки дирофилярий), ленточные гельминты.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="slider__slide-image">
-                                <img src="img/content/slider/1.png" alt="Slider Image">
-                            </div>
+            <div class="slider__content">
+                <div class="slider__slider-block">
+                    <div class="swiper slider__swiper js-init-slider">
+                        <div class="slider__navigation-block">
+                            {{>navigation}}
                         </div>
-                    </li>
-                    {{/each}}
-                </ul>
+                        <ul class="swiper-wrapper slider__wrapper">
+                            {{#each slider}}
+                            <li class="swiper-slide slider__slide-wrapper">
+                                <div class="slider__slide">
+                                    <div class="slider__slide-content">
+                                        <h2 class="title slider__slide-title">{{this.title}}</h2>
+                                        <div class="text slider__slide-text">
+                                            {{{this.body}}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slider__slide-image">
+                    <img src="img/leo.gif" alt="Slider Image">
+                </div>
             </div>
         </div>
     </div>
@@ -81,7 +82,7 @@
     <div class="container">
         <div class="benefits__inner">
             <ul class="benefits__list">
-                {{#each presentation}}
+                {{#each benefits}}
                 <li class="benefits__item">
                     <div class="benefits__item-image-wrapper">
                         <img src="{{this.image}}" alt="Benefit 1">
@@ -112,7 +113,8 @@
     </div>
 </section>
 
-<section class="calculator js-init-calculator">
+{{!-- Данные берутся из assets/calculator.json (JS: js/calculator.js) --}}
+<section class="calculator js-init-calculator" data-url="assets/calculator.json">
     <div class="container">
         <div class="calculator__inner">
             <h2 class="h2 calculator__title">Подберите препарат и дозировку</h2>
@@ -123,19 +125,19 @@
                 </button>
             </div>
 
-            <div style="min-width: 0; width: 100%; margin-top: 2rem;">
+            <div class="calculator__slider-container">
                 <div class="swiper calculator__slider">
                     <ul class="swiper-wrapper calculator__slider-wrapper">
-                        {{#each calculator}}
-                        <li class="swiper-slide calculator__slide-wrapper">
-                            <div class="calculator__slide">
-                                <div class="calculator__slide-image-wrapper">
-                                    <img src="{{this.image}}" alt="Calculator">
+                        <template id="slide">
+                            <li class="swiper-slide calculator__slide-wrapper">
+                                <div class="calculator__slide">
+                                    <div class="calculator__slide-image-wrapper">
+                                        <img src="" alt="Calculator">
+                                    </div>
+                                    <span class="title calculator__slide-title"></span>
                                 </div>
-                                <span class="title calculator__slide-title">{{this.title}}</span>
-                            </div>
-                        </li>
-                        {{/each}}
+                            </li>
+                        </template>
                     </ul>
                 </div>
             </div>
@@ -170,12 +172,12 @@
     </div>
 </section>
 
-<section class="map js-init-map">
+{{!-- Данные берутся из assets/contacts.json (JS: js/map.js) --}}
+<section class="map js-init-map" data-url="assets/contacts.json">
     <div class="container">
         <div class="map__inner">
             <h2 class="h2 map__title">Купить в магазине</h2>
             <div class="map__filter">
-                {{>dropdown}}
                 {{>dropdown}}
             </div>
             <div class="map__block" id="map"></div>

@@ -1,0 +1,150 @@
+{
+  "boxes": [
+    {
+      "type": "cat",
+      "image": "img/content/calc-slider/3.png",
+      "name": "Кошка",
+      "weight": {
+        "from": 1,
+        "to": 10
+      }
+    },
+    {
+      "type": "dog",
+      "image": "img/content/calc-slider/2.png",
+      "name": "Собака (1 - 10)",
+      "weight": {
+        "from": 1,
+        "to": 10
+      }
+    },
+    {
+      "type": "dog",
+      "image": "img/content/calc-slider/2.png",
+      "name": "Собака (10 - 19)",
+      "weight": {
+        "from": 10,
+        "to": 19
+      }
+    },
+    {
+      "type": "dog",
+      "image": "img/content/calc-slider/2.png",
+      "name": "Собака (20 - 29)",
+      "weight": {
+        "from": 20,
+        "to": 29
+      }
+    },
+    {
+      "type": "dog",
+      "image": "img/content/calc-slider/2.png",
+      "name": "Собака (30 - 50)",
+      "weight": {
+        "from": 30,
+        "to": 50
+      }
+    }
+  ],
+  "doses": [
+    {
+      "type": "cat",
+      "weight": {
+        "from": 1,
+        "to": 5
+      },
+      "drops": 15,
+      "dose": 0.5
+    },
+    {
+      "type": "cat",
+      "weight": {
+        "from": 6,
+        "to": 10
+      },
+      "drops": 30,
+      "dose": 1
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 1,
+        "to": 5
+      },
+      "drops": 15,
+      "dose": 0.5
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 6,
+        "to": 9
+      },
+      "drops": 30,
+      "dose": 1
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 10,
+        "to": 19
+      },
+      "drops": 60,
+      "dose": 2
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 20,
+        "to": 29
+      },
+      "drops": 90,
+      "dose": 3
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 30,
+        "to": 39
+      },
+      "drops": 120,
+      "dose": 4
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 40,
+        "to": 49
+      },
+      "drops": 150,
+      "dose": 5
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 50,
+        "to": 59
+      },
+      "drops": 180,
+      "dose": 6
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 60,
+        "to": 69
+      },
+      "drops": 210,
+      "dose": 7
+    },
+    {
+      "type": "dog",
+      "weight": {
+        "from": 70,
+        "to": 80
+      },
+      "drops": 240,
+      "dose": 8
+    }
+  ]
+}

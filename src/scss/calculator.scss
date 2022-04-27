@@ -13,10 +13,22 @@
     margin-bottom: 2.2rem;
   }
 
+  &__slider-container {
+    min-width: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
+
   &__slider {
     margin-bottom: 4.4rem;
     
     overflow: hidden;
+
+    mask: linear-gradient(to left, transparent 0 5rem, #fff 8rem calc(100% - 5rem), transparent 100%);
+    mask-size: 100% 100%;
+    mask-position: center;
+    mask-repeat:no-repeat;
+    mask-composite: intersect;
   }
 
   &__slider-wrapper {

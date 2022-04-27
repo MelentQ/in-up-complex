@@ -4,6 +4,16 @@
   &__inner {
   }
 
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12.8rem;
+  }
+
+  &__slider-block {
+    grid-column: span 2;
+  }
+
   &__title {
     margin-bottom: 14rem;
   }
@@ -12,15 +22,7 @@
   }
 
   &__navigation-block {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12.8rem;
-
     margin-bottom: 2rem;
-
-    .navigation {
-      grid-column: span 2;
-    }
   }
 
   &__wrapper {
@@ -30,13 +32,10 @@
   }
 
   &__slide {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12.8rem;
   }
 
   &__slide-content {
-    grid-column: span 2;
+    
   }
 
   &__slide-title {
@@ -48,9 +47,28 @@
   }
 
   &__slide-image {
-    width: 100%;
-    height: auto;
+    position: relative;
 
-    object-fit: contain;
+    box-sizing: content-box;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-color: #FBB237;
+
+    border-radius: 50%;
+
+    img {
+      border-radius: 50%;
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      width: calc(100% - 4rem);
+      height: calc(100% - 4rem);
+
+      object-fit: cover;
+    }
   }
 }
