@@ -3,7 +3,7 @@
     {
       "type": "cat",
       "image": "img/content/calc-slider/3.jpg",
-      "name": "Кошка",
+      "name": "IN-UP complex капли для кошек",
       "weight": {
         "from": 1,
         "to": 10
@@ -42,7 +42,7 @@
       "name": "Собака (30 - 50)",
       "weight": {
         "from": 30,
-        "to": 50
+        "to": 80
       }
     }
   ],
@@ -126,7 +126,7 @@
         "to": 59
       },
       "drops": 180,
-      "dose": 6
+      "dose": "5+1"
     },
     {
       "type": "dog",
@@ -135,7 +135,7 @@
         "to": 69
       },
       "drops": 210,
-      "dose": 7
+      "dose": "5+2"
     },
     {
       "type": "dog",
@@ -144,7 +144,7 @@
         "to": 80
       },
       "drops": 240,
-      "dose": 8
+      "dose": "5+3"
     }
   ]
 }
