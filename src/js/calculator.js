@@ -21,6 +21,7 @@ export default function calculator() {
           return false;
         }
         return true;
+
       };
 
       let current = 'cat';
@@ -149,3 +150,6 @@ export default function calculator() {
     .children[0]
     .cloneNode(true);
 }
+
+
+

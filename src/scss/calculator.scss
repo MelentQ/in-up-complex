@@ -25,18 +25,31 @@
     min-width: 0;
     width: 100%;
     margin-top: 2rem;
+    align-self: stretch;
+    transform: translateZ(0);
+    position: relative;
+    z-index: 100;
+    backface-visibility: hidden;
+
+  
   }
 
   &__slider {
     margin-bottom: 4.4rem;
-    
+    width: 100%;
     overflow: hidden;
 
-    mask: linear-gradient(to left, transparent 0 5rem, #fff 8rem calc(100% - 5rem), transparent 100%);
-    mask-size: 100% 100%;
-    mask-position: center;
-    mask-repeat:no-repeat;
-    mask-composite: intersect;
+    // background-color: green;
+
+   
+
+
+    mask: linear-gradient(to right, transparent 0, white 5rem, white calc(100% - 5rem), transparent 100%);
+    
+    // mask-size: 100% 100%;
+    // mask-position: center;
+    // mask-repeat:no-repeat;
+    // mask-composite: intersect;
   }
 
   &__slider-wrapper {
@@ -46,6 +59,7 @@
 
     transition: transform 0.3s ease;
     transform: scale(0.8);
+    // background-color: orange;
 
     &.swiper-slide-active {
       transform: scale(1);
