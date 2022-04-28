@@ -65,7 +65,7 @@ export default function calculator() {
           range.updateOptions({
             range: {
               'min': 1,
-              'max': 50
+              'max': 80
             },
             start: 10
           })
