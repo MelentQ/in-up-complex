@@ -21,7 +21,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/5.jpg",
-      "name": "Собака (10 - 19)",
+      "name": "Собака (10 - 20)",
       "weight": {
         "from": 10,
         "to": 19
@@ -30,7 +30,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/1.jpg",
-      "name": "Собака (20 - 29)",
+      "name": "Собака (20 - 30)",
       "weight": {
         "from": 20,
         "to": 29
