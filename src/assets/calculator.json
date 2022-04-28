@@ -2,7 +2,7 @@
   "boxes": [
     {
       "type": "cat",
-      "image": "img/content/calc-slider/3.png",
+      "image": "img/content/calc-slider/3.jpg",
       "name": "Кошка",
       "weight": {
         "from": 1,
@@ -11,7 +11,7 @@
     },
     {
       "type": "dog",
-      "image": "img/content/calc-slider/2.png",
+      "image": "img/content/calc-slider/4.jpg",
       "name": "Собака (1 - 10)",
       "weight": {
         "from": 1,
@@ -20,7 +20,7 @@
     },
     {
       "type": "dog",
-      "image": "img/content/calc-slider/2.png",
+      "image": "img/content/calc-slider/1.jpg",
       "name": "Собака (10 - 19)",
       "weight": {
         "from": 10,
@@ -29,7 +29,7 @@
     },
     {
       "type": "dog",
-      "image": "img/content/calc-slider/2.png",
+      "image": "img/content/calc-slider/2.jpg",
       "name": "Собака (20 - 29)",
       "weight": {
         "from": 20,
@@ -38,7 +38,7 @@
     },
     {
       "type": "dog",
-      "image": "img/content/calc-slider/2.png",
+      "image": "img/content/calc-slider/5.jpg",
       "name": "Собака (30 - 50)",
       "weight": {
         "from": 30,

@@ -149,11 +149,13 @@
   &__image {
     width: 100%;
     height: auto;
+    transform: scale(1.9) translateY(3rem);
 
     object-fit: contain;
 
     @media only screen and (max-width: (640px)) {
       width: calc(100% - 4rem);
+      transform: scale(1.9) translateY(1.5rem);
     }
   }
 
