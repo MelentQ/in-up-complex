@@ -3,7 +3,10 @@
 
 
 <section class="intro">
-    <img class="intro__bg lazyload" src="img/bg.jpg" alt="BG Image">
+    <picture>
+        <source srcset="img/bg.jpg" media="(max-width: 640px)">
+        <img class="intro__bg lazyload" src="img/bg.jpg" alt="BG Image">
+    </picture>
     <h1 class="visually-hidden">In-Up Complex</h1>
     <div class="container">
         <div class="intro__inner">
