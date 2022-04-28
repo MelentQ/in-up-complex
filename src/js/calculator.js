@@ -16,6 +16,13 @@ export default function calculator() {
       })
 
     function render(data) {
+      const isNotApple = () => {
+        if (!/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+          return false;
+        }
+        return true;
+      };
+
       let current = 'cat';
 
       const slidesContainer = container.querySelector('.calculator__slider-wrapper');
@@ -106,10 +113,15 @@ export default function calculator() {
       })
 
       function setSize(input) {
-        input.size = input.value.length || 1;
-        if (input.value.length > 3) {
-          input.size = 3;
+        if (isNotApple) {
+          input.style.width = `${input.value.length}ex`;
+        } else {
+          input.style.width = `${input.value.length + 1}ex`;
         }
+        // input.size = input.value.length || 1;
+        // if (input.value.length > 3) {
+        //   input.size = 3;
+        // }
       }
 
       function checkWeight(data, weight) {
