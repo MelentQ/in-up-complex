@@ -1,7 +1,3 @@
-# Сайт Money Help
-
-Финансовая помощь, займы
-
 ## Страницы
 
 * [Главная](https://melentq.github.io/money-help/index)
