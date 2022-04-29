@@ -5,6 +5,8 @@ Swiper.use([Navigation, EffectFade]);
 export default function sliders() {
   const sliders = Array.from(document.querySelectorAll('.js-init-slider'));
   sliders.forEach(slider => {
+
+    if (slider.matches('.js-slider-only-desktop') && window.matchMedia("(max-width: 640px)").matches) return;
     const navigation = slider.querySelector('.navigation');
     let navSettings = {};
 
