@@ -32,6 +32,10 @@
     height: 100%;
 
     object-fit: cover;
+
+    @media only screen and (max-width: (640px)) {
+      height: auto;
+    }
   }
 
   &__inner {
@@ -157,6 +161,7 @@
     @media only screen and (max-width: (640px)) {
       width: calc(100% - 4rem);
       transform: scale(1.9) translateY(1.5rem);
+      
     }
   }
 
