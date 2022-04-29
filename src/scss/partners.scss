@@ -22,6 +22,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 
+    max-width: 82rem;
+    margin: 0 auto;
+
     @media only screen and (max-width: (640px)) {
       grid-template-columns: repeat(2, 1fr);
     }

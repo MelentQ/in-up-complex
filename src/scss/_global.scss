@@ -12,7 +12,7 @@
 
 :root {
     --max-container-width: 114rem;
-    --content-padding: 6rem;
+    --content-padding: 2rem;
     --primary-color: #056839;
     --secondary-color: #E99022;
     --heading-color: #4A270E;
@@ -25,20 +25,22 @@
 
 html {
     box-sizing: border-box;
-    font-size: 0.520833333vw; //1920px -> 10px
+    // font-size: 0.520833333vw; //1920px -> 10px
     -webkit-text-size-adjust: 100%;
 
     @include noHighlight();
-    font-size: clamp(7px, 0.520833333vw, 10px);
+    font-size: 10px;
 
     // font-size: 10px;
+
+    @media screen and (max-width: 1180px) {
+        font-size: clamp(7px, 0.520833333vw, 10px);
+    }
 
     @include breakpoint(mobile) {
         font-size: 10px;
     }
-    @media screen and (min-width: 1921px) {
-        font-size: 10px;
-    }
+
 }
 
 body {

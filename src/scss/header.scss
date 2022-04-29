@@ -50,5 +50,10 @@
   }
 
   &__button {
+    @media only screen and (max-width: (640px)) {
+      font-size: 1.4rem;
+
+      padding: 0.8rem 1.8rem;
+    }
   }
 }

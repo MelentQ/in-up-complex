@@ -1,5 +1,5 @@
 .calculator {
-    padding: 10rem 0;
+    padding: 11rem 0 8rem;
 
     @media only screen and (max-width: (640px)) {
         padding: 5rem 0;
@@ -23,7 +23,6 @@
     &__slider-container {
         min-width: 0;
         width: 100%;
-        margin-top: 2rem;
         align-self: stretch;
         transform: translateZ(0);
         position: relative;
@@ -32,7 +31,8 @@
     }
 
     &__slider {
-        margin-bottom: 4.4rem;
+        padding-top: 6rem;
+        padding-bottom: 4.4rem;
         width: 100%;
         overflow: hidden;
 
@@ -54,20 +54,31 @@
     }
 
     &__slide-wrapper {
-        transition: transform 0.3s ease;
-        transform: scale(0.8);
         // background-color: orange;
 
         &.swiper-slide-active {
-            transform: scale(1);
+            .calculator__slide {
+                transform: scale(1.2);
+            }
 
             .calculator__slide-title {
                 opacity: 1;
             }
         }
+
+        &.swiper-slide-prev .calculator__slide {
+            transform: scale(1) translateX(-1rem);
+        }
+
+        
+        &.swiper-slide-next .calculator__slide {
+            transform: scale(1) translateX(1rem);
+        }
     }
 
     &__slide {
+        transition: transform 0.3s ease;
+        transform: scale(0.9);
     }
 
     &__slide-image-wrapper {
@@ -85,6 +96,11 @@
         max-width: 22.4rem;
 
         text-align: center;
+
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        color: var(--primary-color);
 
         opacity: 0;
 

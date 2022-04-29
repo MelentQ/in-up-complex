@@ -48,7 +48,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
 
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     @media only screen and (max-width: (640px)) {
       display: contents;
@@ -66,6 +66,7 @@
   }
 
   &__logo {
+    margin-left: 9rem;
     width: 36rem;
     height: auto;
 
@@ -78,7 +79,12 @@
       order: 1;
 
       width: 18rem;
+      margin-left: 0;
       margin-bottom: 4rem;
+    }
+
+    @media only screen and (max-width: (360px)) {
+      margin-bottom: 2.4rem;
     }
   }
 
@@ -87,6 +93,7 @@
 
     max-width: 42rem;
     margin-top: 9rem;
+    margin-left: 10rem;
 
     @media only screen and (max-width: (640px)) {
       position: relative;
@@ -118,7 +125,7 @@
 
   &__title-image {
     position: absolute;
-    bottom: calc(100% + 3rem);
+    bottom: calc(100% + 1.8rem);
     left: 0;
     z-index: 1;
 
@@ -154,14 +161,17 @@
   &__image {
     width: 100%;
     height: auto;
-    transform: scale(1.9) translateY(3rem);
+    transform: scale(1.75) translateY(3rem);
 
     object-fit: contain;
 
     @media only screen and (max-width: (640px)) {
       width: calc(100% - 4rem);
-      transform: scale(1.9) translateY(1.5rem);
-      
+      transform: scale(1.5) translateY(1.5rem);
+    }
+
+    @media only screen and (max-width: (360px)) {
+      transform: scale(2) translateY(1.2rem);
     }
   }
 

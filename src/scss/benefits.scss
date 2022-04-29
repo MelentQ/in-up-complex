@@ -1,6 +1,6 @@
 .benefits {
   
-  padding: 5rem 0 15rem;
+  padding: 10rem 0 15rem;
 
   @media only screen and (max-width: (640px)) {
     padding: 5rem 0 5rem;
@@ -22,13 +22,59 @@
   &__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 7rem;
+    grid-gap: 3rem;
     align-items: center;
 
     @media only screen and (max-width: (640px)) {
       grid-template-columns: 1fr;
       gap: 2.4rem;
     }
+
+    // PIXEL PERFECT ...
+    &:nth-child(1) .benefits__item-image-wrapper img {
+      position: relative;
+      left: 3rem;
+      transform: scale(1.1);
+
+      @media only screen and (max-width: (640px)) {
+        position: static;
+        left: unset;
+        transform: scale(0.87)
+      }
+    }
+
+    &:nth-child(2) .benefits__item-image-wrapper img {
+      transform: scale(1.2);
+
+      @media only screen and (max-width: (640px)) {
+        transform: scale(1.1)
+      }
+    }
+
+    &:nth-child(3) {
+      margin-top: 6rem;
+
+      @media only screen and (max-width: (640px)) {
+        margin-top: 0;
+      }
+
+      .benefits__item-image-wrapper img {
+        transform: scale(1.4);
+
+        @media only screen and (max-width: (640px)) {
+          transform: scale(1.2);
+        }
+      }
+
+      .benefits__item-text-block {
+        margin-right: 1rem;
+
+        @media only screen and (max-width: (640px)) {
+          margin-right: 0;
+        }
+      }
+    }
+
 
     &:nth-child(2n + 2) {
       .benefits__item-image-wrapper {

@@ -20,6 +20,7 @@
   }
 
   &__slider-wrapper {
+    margin-bottom: 1rem;
   }
 
   &__slide-wrapper {
@@ -36,8 +37,8 @@
 
   &__pesel {
     position: absolute;
-    right: 3rem;
-    bottom: -3rem;
+    right: 5rem;
+    bottom: -5rem;
     z-index: 2;
     pointer-events: none;
 
