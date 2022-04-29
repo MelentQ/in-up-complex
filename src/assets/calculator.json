@@ -12,7 +12,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/4.jpg",
-      "name": "Собака (1 - 10)",
+      "name": "IN-UP complex для собак массой до 10 кг",
       "weight": {
         "from": 1,
         "to": 10
@@ -21,7 +21,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/5.jpg",
-      "name": "Собака (10 - 20)",
+      "name": "IN-UP complex для собак массой от 10 до 20 кг",
       "weight": {
         "from": 10,
         "to": 19
@@ -30,7 +30,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/1.jpg",
-      "name": "Собака (20 - 30)",
+      "name": "IN-UP complex для собак массой от 20 до 30 кг",
       "weight": {
         "from": 20,
         "to": 29
@@ -39,7 +39,7 @@
     {
       "type": "dog",
       "image": "img/content/calc-slider/2.jpg",
-      "name": "Собака (30 - 50)",
+      "name": "IN-UP complex для собак массой от 30 до 50 кг",
       "weight": {
         "from": 30,
         "to": 80
